@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PSA2 - PHP Operators & Control Structure</title>
+    <title>PSA2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
             <strong>Date:</strong> May 9, 2026
         </div>
 
-        <h1 class="page-title">Pre-Summative Assessment 2</h1>
+        <h1 class="page-title">PSA2 Technical</h1>
         <p style="text-align: center; margin-bottom: 30px; color: #666;">
         </p>
 
@@ -26,13 +26,13 @@
                 <h2>Activity 1</h2>
             </a>
 
-            <!-- Card 2 (Link ready, file pending) -->
+            <!-- Card 2 -->
             <a href="item2.php" class="card">
                 <span class="card-icon">🎓</span>
                 <h2>Activity 2</h2>
             </a>
 
-            <!-- Card 3 (Link ready, file pending) -->
+            <!-- Card 3 -->
             <a href="item3.php" class="card">
                 <span class="card-icon">🔢</span>
                 <h2>Activity 3</h2>
@@ -40,7 +40,7 @@
         </div>
 
         <footer>
-            <p>FEU Institute of Technology | ADET</p>
+            <p>PSA 2</p>
         </footer>
     </div>
 </body>

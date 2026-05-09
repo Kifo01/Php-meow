@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Activity 2 - Grade Ranking</title>
+    <title>Activity 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -37,8 +37,7 @@
         </div>
 
         <?php
-        // Simple check if form was submitted without using isset()
-        // We check if the grade field is not empty
+
         if (!empty($_POST['grade'])) {
             
             $name = $_POST['studentName'];
@@ -50,51 +49,51 @@
             // Conditional Statements for Grading
             if ($grade >= 93 && $grade <= 100) {
                 $rank = "A";
-                $image = "images/happy.jpeg";
+                $image = "happy.jpeg";
                 $imageText = "Excellent Performance";
             } elseif ($grade >= 90 && $grade <= 92) {
                 $rank = "A-";
-                $image = "images/happy.jpeg";
+                $image = "happy.jpeg";
                 $imageText = "Excellent Performance";
             } elseif ($grade >= 87 && $grade <= 89) {
                 $rank = "B+";
-                $image = "images/huh.jpeg";
+                $image = "huh.jpeg";
                 $imageText = "Good Performance";
             } elseif ($grade >= 83 && $grade <= 86) {
                 $rank = "B";
-                $image = "images/huh.jpeg";
+                $image = "huh.jpeg";
                 $imageText = "Good Performance";
             } elseif ($grade >= 80 && $grade <= 82) {
                 $rank = "B-";
-                $image = "images/huh.jpeg";
+                $image = "huh.jpeg";
                 $imageText = "Good Performance";
             } elseif ($grade >= 77 && $grade <= 79) {
                 $rank = "C+";
-                $image = "images/sad.jpeg";
+                $image = "sad.jpeg";
                 $imageText = "Average Performance";
             } elseif ($grade >= 73 && $grade <= 76) {
                 $rank = "C";
-                $image = "images/sad.jpeg";
+                $image = "sad.jpeg";
                 $imageText = "Average Performance";
             } elseif ($grade >= 70 && $grade <= 72) {
                 $rank = "C-";
-                $image = "images/sad.jpeg";
+                $image = "sad.jpeg";
                 $imageText = "Average Performance";
             } elseif ($grade >= 67 && $grade <= 69) {
                 $rank = "D+";
-                $image = "images/sad.jpeg";
+                $image = "sad.jpeg";
                 $imageText = "Needs Improvement";
             } elseif ($grade >= 63 && $grade <= 66) {
                 $rank = "D";
-                $image = "images/sad.jpeg";
+                $image = "sad.jpeg";
                 $imageText = "Needs Improvement";
             } elseif ($grade >= 60 && $grade <= 62) {
                 $rank = "D-";
-                $image = "images/sad.jpeg";
+                $image = "sad.jpeg";
                 $imageText = "Needs Improvement";
             } elseif ($grade >= 0 && $grade < 60) {
                 $rank = "F";
-                $image = "images/sad.jpeg";
+                $image = "sad.jpeg";
                 $imageText = "Failed";
             } else {
                 $rank = "Invalid";
