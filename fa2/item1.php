@@ -18,7 +18,7 @@
 
             <?php
             // SINGLE BASE VALUE
-            $base = 1;
+            $base = 10;
 
             // METRIC CONVERSIONS
             $cm_to_mm = $base * 10;

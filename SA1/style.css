@@ -1,0 +1,250 @@
+/* ========================================
+   GLOBAL RESET & BASE STYLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   PAGE TITLE (Shared)
+   ======================================== */
+.page-title {
+    text-align: center;
+    color: #4a6fa5;
+    border-bottom: 3px solid #000;
+    padding-bottom: 10px;
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* ========================================
+   HOMEPAGE CARD STYLES
+   ======================================== */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+.card {
+    display: block;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #667eea;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border-left-color: #764ba2;
+}
+
+.card h2 {
+    color: #4a6fa5;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* ========================================
+   ACTIVITY 1: REGISTRATION FORM STYLES
+   ======================================== */
+.registration-form {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #dee2e6;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #4a6fa5;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: #764ba2;
+}
+
+/* Registration Output Display */
+.registration-output {
+    background: #e7f3ff;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #2196F3;
+    margin-top: 20px;
+}
+
+.output-row {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #cce5ff;
+}
+
+.output-row:last-child {
+    border-bottom: none;
+}
+
+.output-label {
+    font-weight: bold;
+    width: 200px;
+    color: #4a6fa5;
+}
+
+.output-value {
+    color: #333;
+}
+
+/* ========================================
+   ACTIVITY 2: MULTIPLICATION TABLE STYLES
+   ======================================== */
+.multiplication-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.multiplication-table {
+    border-collapse: collapse;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.multiplication-table td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: #333;
+}
+
+.cell-zero {
+    background-color: #4a6fa5; 
+    color: white;
+}
+
+.cell-light-blue {
+    background-color: #e3f2fd; 
+}
+
+.cell-white {
+    background-color: #f9f9f9; 
+}
+
+/* ========================================
+   UTILITIES
+   ======================================== */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: #4a6fa5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    background: #3d5a80;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .output-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .output-label {
+        width: 100%;
+    }
+    
+    .multiplication-table th,
+    .multiplication-table td {
+        padding: 4px;
+        font-size: 0.8rem;
+        width: 30px;
+        height: 30px;
+    }
+}
