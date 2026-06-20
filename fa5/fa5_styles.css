@@ -1,0 +1,127 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4a6fa5;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #4a6fa5;
+}
+
+h2 { 
+    color: #4a6fa5; 
+    margin-bottom: 15px; 
+    border-bottom: 2px solid #667eea; 
+    padding-bottom: 8px; 
+}
+
+/* --- FORM STYLES --- */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group { margin-bottom: 20px; }
+
+.form-group label { 
+    display: block; 
+    font-weight: 600; 
+    margin-bottom: 8px; 
+    color: #333; 
+    font-size: 14px; 
+}
+
+.form-group input, .form-group textarea {
+    width: 100%; 
+    padding: 12px 15px; 
+    border: 2px solid #ddd; 
+    border-radius: 4px; 
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #4a6fa5;
+}
+
+/* --- PURPLE BUTTON --- */
+button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(118, 75, 162, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(118, 75, 162, 0.4);
+}
+
+/* --- OUTPUT BOX STYLES --- */
+.output-box {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 4px;
+    border: 2px solid #4a6fa5;
+    margin-top: 30px;
+}
+
+.output-box h2 {
+    color: #4a6fa5;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: none;
+}
+
+.output-box p {
+    margin: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.output-box p:last-child {
+    border-bottom: none;
+}
+
+.output-box strong {
+    color: #333;
+    display: inline-block;
+    width: 150px;
+}
+
+/* --- COOKIE COLOR BOX --- */
+.color-box {
+    display: inline-block; 
+    width: 100px; 
+    height: 100px; 
+    margin: 10px; 
+    border-radius: 8px; 
+    border: 2px solid #333;
+}
